@@ -4,261 +4,497 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PixBud Privacy Policy</title>
-
+    <meta
+      name="description"
+      content="How PixBud collects, uses and protects information, including advertising and analytics."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
     <style>
       * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
       }
-
+      html {
+        scroll-behavior: smooth;
+      }
       body {
-        font-family: "Inter", sans-serif;
+        font-family: "Inter", -apple-system, "Segoe UI", sans-serif;
         background: #f5f6fa;
         color: #1c1d21;
         line-height: 1.7;
       }
-
       .header {
         background: linear-gradient(135deg, #14153b, #24277c);
-        padding: 70px 20px;
+        padding: 64px 20px 56px;
         text-align: center;
-        color: white;
+        color: #fff;
       }
-
-      .logo img {
-        width: 70px;
-        height: 70px;
-        object-fit: contain;
-        margin-bottom: 18px;
-      }
-
       .header h1 {
-        font-size: 40px;
+        font-size: 38px;
         font-weight: 700;
+        letter-spacing: -0.5px;
       }
-
       .header p {
-        margin-top: 10px;
+        margin-top: 8px;
         color: #d4d7ff;
-        font-size: 18px;
+        font-size: 17px;
       }
-
-      .badge {
+      .meta {
         display: inline-block;
         margin-top: 20px;
         background: rgba(255, 255, 255, 0.12);
-        padding: 10px 18px;
+        padding: 8px 18px;
         border-radius: 50px;
-        font-size: 14px;
+        font-size: 13.5px;
+        color: #e6e8ff;
       }
-
       .container {
-        max-width: 900px;
-        margin: 30px auto;
-        padding: 0 20px 40px;
+        max-width: 880px;
+        margin: -24px auto 0;
+        padding: 0 20px 48px;
       }
-
       .card {
         background: #fff;
-        border-radius: 24px;
+        border-radius: 20px;
         padding: 48px;
         box-shadow: 0 12px 35px rgba(20, 21, 59, 0.08);
       }
-
+      .summary {
+        background: #f3f4ff;
+        border-left: 4px solid #4b5cff;
+        border-radius: 10px;
+        padding: 20px 24px;
+        margin: 8px 0 28px;
+      }
+      .summary h3 {
+        color: #14153b;
+        font-size: 16px;
+        margin-bottom: 8px;
+      }
+      .summary ul {
+        margin: 0 0 0 20px;
+      }
+      .summary li {
+        margin: 5px 0;
+        font-size: 15px;
+        color: #3c3d4a;
+      }
+      nav.toc {
+        margin: 0 0 8px;
+        padding: 20px 24px;
+        border: 1px solid #e6e8f5;
+        border-radius: 10px;
+      }
+      nav.toc h3 {
+        font-size: 15px;
+        color: #14153b;
+        margin-bottom: 8px;
+      }
+      nav.toc ol {
+        columns: 2;
+        column-gap: 32px;
+        margin-left: 20px;
+        font-size: 14.5px;
+      }
+      nav.toc li {
+        margin: 3px 0;
+        break-inside: avoid;
+      }
       h2 {
         color: #14153b;
-        font-size: 24px;
+        font-size: 21px;
         margin-top: 40px;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
         padding-bottom: 8px;
         border-bottom: 2px solid #eef0ff;
+        scroll-margin-top: 16px;
       }
-
+      h3.sub {
+        color: #14153b;
+        font-size: 16px;
+        margin: 22px 0 6px;
+      }
       p {
         color: #4b4b55;
-        font-size: 16px;
-        line-height: 1.9;
+        font-size: 15.5px;
+        line-height: 1.85;
+        margin-bottom: 12px;
       }
       ul {
-        margin: 15px 0 25px 22px;
+        margin: 10px 0 18px 22px;
       }
-
       li {
-        margin: 12px 0;
-        line-height: 1.8;
+        margin: 8px 0;
+        line-height: 1.75;
+        color: #4b4b55;
+        font-size: 15.5px;
       }
-
       a {
         color: #4b5cff;
         text-decoration: none;
       }
-
       a:hover {
         text-decoration: underline;
       }
-
+      .table-wrap {
+        overflow-x: auto;
+        margin: 14px 0 20px;
+        border: 1px solid #e6e8f5;
+        border-radius: 10px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14.5px;
+        min-width: 560px;
+      }
+      th,
+      td {
+        text-align: left;
+        padding: 12px 14px;
+        vertical-align: top;
+        border-bottom: 1px solid #eef0ff;
+        color: #3c3d4a;
+      }
+      th {
+        background: #f3f4ff;
+        color: #14153b;
+        font-weight: 600;
+      }
+      tr:last-child td {
+        border-bottom: 0;
+      }
+      .contact {
+        background: #f3f4ff;
+        border-radius: 12px;
+        padding: 20px 24px;
+        margin-top: 8px;
+      }
+      .contact p {
+        margin: 4px 0;
+      }
       .footer {
         text-align: center;
         color: #6b6f80;
-
-        margin-top: 40px;
-
-        padding: 45px 20px;
-
-        background: #eef0ff;
-
-        border-radius: 20px;
+        margin-top: 28px;
+        font-size: 13.5px;
       }
-
-      .footer h3 {
-        color: #14153b;
-        margin-bottom: 10px;
-      }
-
-      .footer a {
-        display: inline-block;
-        margin-top: 15px;
-        padding: 12px 26px;
-        background: #14153b;
-        color: white;
-        border-radius: 50px;
-      }
-
       @media (max-width: 600px) {
         .card {
-          padding: 26px;
+          padding: 26px 20px;
         }
-
         .header {
-          padding: 55px 20px;
+          padding: 48px 20px 44px;
         }
-
         .header h1 {
-          font-size: 32px;
+          font-size: 30px;
+        }
+        nav.toc ol {
+          columns: 1;
         }
       }
     </style>
   </head>
   <body>
-    <div class="header">
+    <header class="header">
       <h1>Privacy Policy</h1>
+      <p>PixBud – AI Prompt Companion</p>
+      <span class="meta">Effective date: 9 October 2026</span>
+    </header>
 
-      <p>PixBud AI Photo Prompts</p>
-
-      <span class="badge"> Last Updated: July 2026 </span>
-    </div>
-
-    <div class="container">
+    <main class="container">
       <div class="card">
         <p>
-          This Privacy Policy applies to the PixBud – AI Prompt Companion App
-          (“Application”), provided as a free service. The Application is
-          offered “AS IS” for your use.
+          This Privacy Policy explains how PixBud (“the App”, “we”, “us”)
+          collects, uses and protects information when you use our Android
+          application. PixBud is operated by Realfix Studio, Surat, Gujarat,
+          India. By using the App, you acknowledge that you have read this
+          policy.
         </p>
 
+        <div class="summary">
+          <h3>Summary</h3>
+          <ul>
+            <li>
+              PixBud has no user accounts and does not let you upload photos.
+            </li>
+            <li>
+              We do not collect your name, email address, phone number, contacts
+              or precise location.
+            </li>
+            <li>
+              We use Firebase for analytics, crash reporting and notifications.
+            </li>
+            <li>
+              The App shows ads provided by Google AdMob, which may use your
+              device’s advertising ID. You can control this (see Section 6).
+            </li>
+            <li>We do not sell your personal data.</li>
+          </ul>
+        </div>
+
+        <nav class="toc" aria-label="Contents">
+          <h3>Contents</h3>
+          <ol>
+            <li><a href="#about">About PixBud</a></li>
+            <li><a href="#collect">Information we collect</a></li>
+            <li><a href="#use">How we use information</a></li>
+            <li><a href="#partners">Third-party services</a></li>
+            <li><a href="#ads">Advertising</a></li>
+            <li><a href="#choices">Your choices and controls</a></li>
+            <li><a href="#sharing">Sharing and disclosure</a></li>
+            <li><a href="#retention">Data retention</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#rights">Your rights</a></li>
+            <li><a href="#children">Children’s privacy</a></li>
+            <li><a href="#transfers">International data transfers</a></li>
+            <li><a href="#changes">Changes to this policy</a></li>
+            <li><a href="#contact">Contact us</a></li>
+          </ol>
+        </nav>
+
+        <h2 id="about">1. About PixBud</h2>
         <p>
-          PixBud allows users to explore creative image-based prompts, generate
-          text prompts, copy or share prompts, and open external AI tools.
-          PixBud does not require user accounts and does not allow personal
-          photo uploads.
+          PixBud lets you browse creative image-based vibes, generate and view
+          text prompts, save favourites, copy or share prompts, and open
+          external AI tools such as Gemini. The App does not generate or store
+          images from your personal photos.
         </p>
 
-        <h2>Information Collection and Use</h2>
+        <h2 id="collect">2. Information we collect</h2>
+        <h3 class="sub">Collected automatically</h3>
         <p>
-          When using PixBud, limited technical information may be collected
-          automatically to improve performance and stability. This may include:
+          When you use the App, limited technical data is collected
+          automatically through the services listed in Section 4:
         </p>
         <ul>
-          <li>Device type and operating system</li>
-          <li>Anonymous app usage events</li>
-          <li>Crash reports and diagnostic logs</li>
+          <li>
+            Device and app information, such as device model, Android version,
+            app version, language and region settings.
+          </li>
+          <li>
+            App usage events, such as which categories you open, when you add a
+            favourite, or when you copy or share a prompt.
+          </li>
+          <li>
+            Crash reports and diagnostic logs to help us fix errors.
+          </li>
+          <li>
+            Online identifiers, such as a Firebase installation ID and your
+            device’s advertising ID.
+          </li>
+          <li>
+            Your IP address, which is processed when the App connects to our
+            servers and to ad services. We do not use it to identify you
+            personally.
+          </li>
+          <li>
+            Ad interaction data, such as ads shown, clicked or watched.
+          </li>
         </ul>
+
+        <h3 class="sub">Stored only on your device</h3>
         <p>
-          This data is collected using Firebase Analytics and Firebase
-          Crashlytics. PixBud does not collect personal information such as
-          name, email address, phone number, or precise location.
+          Your favourites, theme choice and usage counters are stored locally on
+          your device. We do not receive this data. Clearing the App’s data or
+          uninstalling the App removes it.
         </p>
 
-        <h2>Third-Party Services</h2>
+        <h3 class="sub">Information we do not collect</h3>
+        <p>
+          We do not collect your name, email address, phone number, contacts,
+          precise location, photos or files. If you email us for support, we
+          receive the email address and message you send.
+        </p>
+
+        <h2 id="use">3. How we use information</h2>
         <ul>
-          <li>Firebase Analytics – anonymous usage tracking</li>
-          <li>Firebase Crashlytics – crash reporting</li>
-          <li>Firebase Cloud Messaging – push notifications</li>
+          <li>To operate, maintain and improve the App and its content.</li>
+          <li>To monitor performance and detect and fix crashes.</li>
+          <li>To understand how features are used, in aggregate.</li>
+          <li>To protect the App and our servers against abuse and fraud.</li>
+          <li>To show and measure advertising, which helps keep PixBud free.</li>
+          <li>To send notifications about new content or updates.</li>
+          <li>To respond to your support requests.</li>
         </ul>
+
+        <h2 id="partners">4. Third-party services</h2>
         <p>
-          These services may collect anonymous device data according to Google’s
-          Privacy Policy. PixBud does not control third-party data handling.
+          We use the following service providers. They process data under their
+          own privacy policies.
+        </p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Service</th>
+                <th>Purpose</th>
+                <th>Privacy information</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Google AdMob</td>
+                <td>Displays and measures ads</td>
+                <td>
+                  <a
+                    href="https://policies.google.com/technologies/partner-sites"
+                    >How Google uses data</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>Firebase Analytics</td>
+                <td>Usage statistics</td>
+                <td>
+                  <a href="https://firebase.google.com/support/privacy"
+                    >Firebase privacy</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>Firebase Crashlytics</td>
+                <td>Crash reporting</td>
+                <td>
+                  <a href="https://firebase.google.com/support/privacy"
+                    >Firebase privacy</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>Firebase Cloud Messaging</td>
+                <td>Push notifications</td>
+                <td>
+                  <a href="https://firebase.google.com/support/privacy"
+                    >Firebase privacy</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          The App may also link to external AI tools such as Gemini. Your use of
+          those services is governed by their own terms and privacy policies.
+        </p>
+
+        <h2 id="ads">5. Advertising</h2>
+        <p>
+          PixBud is free and supported by ads served by Google AdMob. AdMob may
+          use your advertising ID, IP address and device and usage information
+          to deliver, personalise and measure ads and to prevent fraud. Ad
+          formats may include banner, native and rewarded video ads. Some
+          features may require you to watch a rewarded ad.
         </p>
         <p>
-          PixBud may provide links to external AI tools (such as Gemini). Any
-          interaction with external services is governed by their respective
-          privacy policies.
+          Users in the European Economic Area, the United Kingdom and
+          Switzerland are shown a consent form (through Google’s User Messaging
+          Platform) before personalised advertising is used. Where consent is
+          not given, only non-personalised ads are shown.
         </p>
 
-        <h2>Push Notifications</h2>
+        <h2 id="choices">6. Your choices and controls</h2>
+        <ul>
+          <li>
+            <strong>Advertising ID:</strong> you can reset it or opt out of ad
+            personalisation in Android under Settings → Privacy → Ads (the path
+            may vary by device).
+          </li>
+          <li>
+            <strong>Consent:</strong> where a consent form applies, you can
+            change your choice at any time through the privacy options offered
+            in the App.
+          </li>
+          <li>
+            <strong>Notifications:</strong> you can turn them off in your
+            device settings.
+          </li>
+          <li>
+            <strong>Local data:</strong> you can clear the App’s storage or
+            uninstall the App at any time.
+          </li>
+          <li>
+            <strong>Google settings:</strong> you can manage Google ad
+            preferences at
+            <a href="https://myadcenter.google.com">myadcenter.google.com</a>.
+          </li>
+        </ul>
+
+        <h2 id="sharing">7. Sharing and disclosure</h2>
         <p>
-          PixBud may send optional push notifications about new content,
-          updates, or important app information. Notifications can be disabled
-          anytime in device settings. No personal data is collected for
-          notifications.
+          We do not sell your personal data. We share data only with the service
+          providers in Section 4, who process it on our behalf or under their
+          own policies, and when required to comply with law, protect our
+          rights, or respond to valid legal requests.
         </p>
 
-        <h2>Data Sharing</h2>
+        <h2 id="retention">8. Data retention</h2>
         <p>
-          PixBud does not sell, rent, or share personal data. Anonymous
-          aggregated technical data may be used only to improve the Application.
+          Analytics and crash data are kept only as long as needed for the
+          purposes in this policy, in line with the retention settings we
+          configure in Firebase and the policies of our providers. Support
+          emails are kept only as long as needed to resolve your request. Data
+          stored on your device remains until you clear it or uninstall the App.
         </p>
 
-        <h2>Data Retention</h2>
+        <h2 id="security">9. Security</h2>
         <p>
-          Anonymous technical data is retained only for performance monitoring.
-          PixBud does not store personal user data.
+          We use reasonable technical and organisational measures to protect
+          information, including encrypted connections (HTTPS). No method of transmission or
+          storage is completely secure, so we cannot guarantee absolute
+          security.
         </p>
 
-        <h2>Children’s Privacy</h2>
+        <h2 id="rights">10. Your rights</h2>
         <p>
-          PixBud is not intended for children under 13. No personal data from
-          children is knowingly collected. If discovered, it will be deleted
-          promptly.
+          Depending on where you live, including under India’s Digital Personal
+          Data Protection Act, 2023, and the GDPR / UK GDPR, you may have the
+          right to access, correct or delete your personal data, to withdraw
+          consent, and to object to or restrict certain processing. PixBud does
+          not hold account data that identifies you, but you can contact us with
+          any request and we will respond within a reasonable time. You may also
+          have the right to complain to your local data protection authority.
         </p>
 
-        <h2>Security</h2>
+        <h2 id="children">11. Children’s privacy</h2>
         <p>
-          Reasonable safeguards protect processed information. However, no
-          online transmission method is completely secure.
+          PixBud is not directed to children under 13, and we do not knowingly
+          collect personal information from them. If you believe a child has
+          provided us personal information, contact us and we will delete it.
         </p>
 
-        <h2>Changes to This Policy</h2>
+        <h2 id="transfers">12. International data transfers</h2>
         <p>
-          This Privacy Policy may be updated periodically. Continued use of
-          PixBud indicates acceptance of updated policies.
+          Our service providers may process data in countries other than your
+          own, including outside India and the EEA. Where required, we rely on
+          the safeguards offered by those providers.
         </p>
 
-        <h2>Your Consent</h2>
-        <p>By using PixBud, you consent to this Privacy Policy.</p>
-
-        <h2>Contact Us</h2>
-
+        <h2 id="changes">13. Changes to this policy</h2>
         <p>
-          If you have any questions about this Privacy Policy or the PixBud
-          application, please contact us.
+          We may update this policy from time to time. The effective date at the
+          top shows when it was last revised. For material changes, we will
+          provide notice in the App or on this page. Your continued use of the
+          App after an update means you accept the revised policy.
         </p>
 
-        <p>Email: contactpixbud@gmail.com</p>
+        <h2 id="contact">14. Contact us</h2>
+        <div class="contact">
+          <p><strong>PixBud (Realfix Studio)</strong></p>
+          <p>Surat, Gujarat, India</p>
+          <p>
+            Email:
+            <a href="mailto:contactpixbud@gmail.com">contactpixbud@gmail.com</a>
+          </p>
+        </div>
       </div>
-      <div class="footer">
-        <h3>PixBud</h3>
 
-        <p>© 2026 PixBud. All Rights Reserved.</p>
-
-        <p>Built with ❤️ to help users create better AI prompts.</p>
-      </div>
-    </div>
+      <p class="footer">© 2026 PixBud. All rights reserved.</p>
+    </main>
   </body>
 </html>
